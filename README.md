@@ -8,4 +8,4 @@ Security settings in the Canvas pages HTML editor prevent inserting <script> tag
 The following demos provide some minimus working examples of how to replicate this functionality. The code in these demos can be copied and pasted into a Canvas page via the HTML editor. Where specified, you'll also need to add files to your Canvas file repository.
 
 ## [Display Code with Syntax Highlighting](https://github.com/wbwatkinson/canvas-demos/blob/main/display-code.html)
-Though Canvas provides the <pre> tag, code displayed with this tag does not have syntax highlighting. gist.github provides a js for every gist to display the gist code with line numbers and syntax highlighting. Though Canvas pages do not allow the use of <script> tags on a page, we use iFrames as a workaround in this example.
+Though Canvas provides the &lt;pre&gt; tag, code displayed with this tag does not have syntax highlighting. gist.github provides a js for every gist to display the gist code with line numbers and syntax highlighting. Though Canvas pages do not allow the use of &lt;script&gt; tags on a page, we use iFrames as a workaround in this example.
