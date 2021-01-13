@@ -1,0 +1,33 @@
+<h1>Execute arbitrary js code</h1>
+
+<h2>Problem</h2>
+<p>Canvas does not allow the use of &lt;script&gt; tags in the pages HTML editor. This restricts the ability to create interactive learning experiences within Canvas pages.</p>
+
+<h2>Solution</h2>
+<p>Though Canvas does not allow &lt;script&gt; tags, it does allow iFrames. The solution is to load the code in an HTML file and then load that file as an iFrame in the Canvas page. This demo will show how to use an HTML file saved in the Canvas files repository; however, it is not necessary to do so. See the following examples to load files from github or an external site:</p>
+<ul>
+  <li>Load files from github</li>
+  <li>Load files from an external site</li>
+  <li>Load files from Canvas file server. Note that this example is simply a more complex example of this one.</li>
+</ul>
+
+<p>The workaround is to:</p> 
+<ol>
+  <li>Draft a javascript script</li>
+  <li>Embed the javascript script into an HTML file</li>
+  <li>Save that HTML file to the Canvas file repository</li>
+  <li>Load the Canvas file as an iFrame</li>
+</ol>
+
+<h2>Caveats</h2>
+<p>This solution has the following dependency:</p>
+<ol>
+  <li>That Canvas does not disable the ability to run arbitrary code loaded through an iFrame</li>
+</ol>
+
+<p>Here is an example of the html file we loaded into the Canvas files section. Note that it contains javascript code</p>
+
+<p><iframe style="height: 284;" src="https://lms.au.af.edu/courses/23009/file_contents/course%20files/test/js-code-demo.html" width="100%" height="284"></p>
+
+<p><iframe style="height: 284;" src="https://lms.au.af.edu/courses/23009/file_contents/course%20files/test/js-run-demo.html" width="100%" height="284"></p>
+
