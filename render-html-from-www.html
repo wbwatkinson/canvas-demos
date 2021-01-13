@@ -1,0 +1,19 @@
+<h1>Render HTML from files</h1>
+
+<h2>Problem</h2>
+<p>Canvas does not allow the use of &lt;script&gt; tags in the pages HTML editor. This restricts the ability to create interactive learning experiences within Canvas pages.</p>
+
+<h2>Solution</h2>
+<p>The workaround is to:</p> 
+<ol>
+  <li>Load a HTML file stored on the www as an iFrame</li>
+</ol>
+
+<h2>Caveats</h2>
+<p>This solution has the following dependency:</p>
+<ol>
+  <li>That Canvas does not disable the ability to run arbitrary code loaded through an iFrame</li>
+  <li>That Canvas does not prevent the use of iFrames loaded from external sources</li>
+</ol>
+
+<p><iframe style="height: 1090;" src="https://elc.github.io/blog/iframes/ode-python/foxes-rabbits-iframe.html" width="100%" height="1090"></iframe></p>
