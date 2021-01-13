@@ -1,7 +1,10 @@
 <h1>Display Code with Syntax Highlighting</h1>
 
-<p>Problem: The Canvas page editor provides &lt;pre&gt; tags, but content within those tags is not rendered with syntax highlighting. However, gist.github provides a javascript a script which can be embedded in a page. This is not a complete solution, however, as Canvas does not allow using &lt;script&gt; in the Canvas HTML editor.</p>
-<p>Solution: The workaround is to:</p> 
+<h2>Problem</h2>
+<p>The Canvas page editor provides &lt;pre&gt; tags, but content within those tags is not rendered with syntax highlighting. However, gist.github provides a javascript a script which can be embedded in a page. This is not a complete solution, however, as Canvas does not allow using &lt;script&gt; in the Canvas HTML editor.</p>
+
+<h2>Solution</h2>
+<p>The workaround is to:</p> 
 <ol>
   <li>Inject the appropriate &lt;script&gt; tags in an HTML file</li>
   <li>Save that HTML file in the Canvas file section</li>
@@ -16,6 +19,6 @@
 
 <pre>https://lms.au.af.edu/courses/99999999/file_contents/course%20files/test/my_example.html</pre>
 
-<p>The following is an example of the HTML file that would be loaded into the Canvas files section (we've loaded this sample via the iFrame function). You may need to experiment with the height to display the entire frame without scroll bars (developer tools can assist to identify the height of the iFrame).</p>
+<p>The following is an example of the HTML file that would be loaded into the Canvas files section (we've loaded this sample via the iFrame function). You may need to experiment with the height to display the entire frame without scroll bars (developer tools can assist to identify the height of the iFrame). Note the automagic syntax highlighting. The js script is the script provided by gist.github and returns the formatted code element for the page.</p>
 
 <p><iframe style="height: 284;" src="https://lms.au.af.edu/courses/23009/file_contents/course%20files/test/embed_gist_demo.html" width="100%" height="284">
